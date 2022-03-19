@@ -21,7 +21,7 @@ public class hrApiWithJsonPath {
         Response response=get("/countries");
         //assign to jsonPath
         JsonPath jsonPath=response.jsonPath();
-        String secondCountryName = jsonPath.getString("items.country_name[0]");
+        String secondCountryName = jsonPath.getString("items.country_name[1]");
         System.out.println("secondCountryName = " + secondCountryName);
         //get all country ids
         List<String> countryIds=jsonPath.getList("items.country_id");

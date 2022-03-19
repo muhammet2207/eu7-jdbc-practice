@@ -45,7 +45,7 @@ public class SpartanTestWithJsonPath {
         JsonPath jsonPath=response.jsonPath();
 
         int idJson=jsonPath.get("id");
-        String nameJson=jsonPath.get("name");
+        String nameJson=jsonPath.getString("name");
 
         System.out.println("nameJson = " + nameJson);
 

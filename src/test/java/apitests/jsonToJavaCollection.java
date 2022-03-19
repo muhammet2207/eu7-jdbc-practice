@@ -36,7 +36,7 @@ public class jsonToJavaCollection {
         Response response = given().accept(ContentType.JSON)
                 .when().get("/api/spartans");
         assertEquals(response.statusCode(),200);
-        //we need to de-serialize JSON respponse to List of Maps
+        //we need to de-serialize JSON response to List of Maps
 
         List<Map<String,Object>> allSpartanList=response.body().as(List.class);
         System.out.println(allSpartanList);
@@ -52,7 +52,7 @@ public class jsonToJavaCollection {
         Response response=when().get("http://44.202.61.16:1000/ords/hr/regions");
 
         assertEquals(response.statusCode(),200);
-        //we de serialize Json response to Map
+        //we de-serialize Json response to Map
         Map<String ,Object> regionMap=response.body().as(Map.class);
         System.out.println(regionMap.get("count"));
         System.out.println(regionMap.get("items"));

@@ -88,7 +88,7 @@ public class SpartanWithParameters {
     public void positiveTestWithQueryParamWithMaps(){
          //create a map and add query parameters
          Map<String,Object> queryMap=new HashMap<>();
-         queryMap.put("gerder","Female");
+         queryMap.put("gender","Female");
          queryMap.put("nameContains","e");
 
          Response response=given().accept(ContentType.JSON)

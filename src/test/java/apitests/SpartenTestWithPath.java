@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 public class SpartenTestWithPath {
     @BeforeClass
     public void beforeClass(){
-        baseURI="http://3.89.101.80:8000";
+        baseURI="http://44.202.61.16:8000";
     }
      /*
    Given accept type is json
@@ -41,6 +41,7 @@ public class SpartenTestWithPath {
         //response.prettyPrint();
         //printing each key value in the json body/payload
         System.out.println(response.path("id").toString());
+        //System.out.println("response.path(\"id\") = " + response.path("id"));
         System.out.println(response.path("name").toString());
         System.out.println(response.body().path("gender").toString());
         System.out.println(response.body().path("phone").toString());

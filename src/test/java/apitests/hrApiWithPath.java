@@ -12,7 +12,7 @@ import java.util.Optional;
 
 import static io.restassured.RestAssured.*;
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
+
 
 public class hrApiWithPath {
     @BeforeClass
@@ -32,7 +32,7 @@ public class hrApiWithPath {
         System.out.println("firstCountryId = " + firstCountryId);
 
         String link1=response.path("items.links[1].href[0]");
-        System.out.println("link2 = " + link1);
+        System.out.println("link1 = " + link1);
 
         //assert that all region_id's are equal to 2
         List<Integer> region_ids=response.path("items.region_id");
